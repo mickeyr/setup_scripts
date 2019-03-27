@@ -26,3 +26,4 @@ server {
 EOF;
 
 ln -s /etc/nginx/sites-available/$SERVICE_NAME /etc/nginx/sites-enabled/$SERVICE_NAME
+rc-service nginx restart
