@@ -28,4 +28,3 @@ EOF;
 ln -s /etc/nginx/sites-available/$SERVICE_NAME /etc/nginx/sites-enabled/$SERVICE_NAME
 rc-service nginx restart
 
-wget -O - https://raw.githubusercontent.com/mickeyr/setup_scripts/master/proxy_add_server.sh | bash
