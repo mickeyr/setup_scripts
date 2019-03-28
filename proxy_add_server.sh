@@ -1,4 +1,3 @@
-#!/bin/ash
 echo What\'s the name of the service you\'d like to configure?
 read SERVICE_NAME
 echo What\'s the IP:PORT of this service?
