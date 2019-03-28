@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo What\'s the name of the service you\'d like to configure?
 read SERVICE_NAME
 echo What\'s the IP:PORT of this service?
@@ -22,7 +24,7 @@ server {
         listen [::]:443 ssl;
         include /etc/nginx/conf.d/ssl.conf;
 }
-EOF;
+EOF
 
 ln -s /etc/nginx/sites-available/$SERVICE_NAME /etc/nginx/sites-enabled/$SERVICE_NAME
 rc-service nginx restart
