@@ -3,5 +3,6 @@ version: 0.2
 phases:
   build:
     commands:
+      - ls -alh
       - aws s3 cp ./ s3://mr-codebuild-test-frontdoor/Files --recursive --exclude "*" --include "*.json"
 
