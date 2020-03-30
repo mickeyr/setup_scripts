@@ -3,4 +3,4 @@ version: 0.2
 phases:
 	build:
 		commands:
-			- aws s3 cp ./ s3://mr-codebuild-test-source/Files --profile sandbox --recursive --exclude "*" --include "*.json"
+			- aws s3 cp ./ s3://mr-codebuild-test-source/Files --recursive --exclude "*" --include "*.json"
